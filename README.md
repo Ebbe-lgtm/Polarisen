@@ -1,4 +1,13 @@
-# Polarisen
+<p align="center"><img src="docs/banner.png" alt="Polarisen: a fast, Apple TV-style home screen for slow Android TVs"></p>
+
+<p align="center">
+<a href="../../releases/latest"><img alt="Download" src="https://img.shields.io/github/v/release/Ebbe-lgtm/Polarisen?label=download&style=for-the-badge&color=2b6cb0"></a>
+<img alt="Android 9+" src="https://img.shields.io/badge/Android%20TV-9%2B-3ddc84?style=for-the-badge">
+<img alt="No root" src="https://img.shields.io/badge/root-not%20needed-8d9dab?style=for-the-badge">
+<a href="LICENSE"><img alt="MIT" src="https://img.shields.io/badge/license-MIT-lightgrey?style=for-the-badge"></a>
+</p>
+
+<h3 align="center">Is your smart TV slow and cluttered? Give it a home screen that feels like an Apple TV.</h3>
 
 A fast, Apple TV-inspired home screen, screensaver and settings app for **low-memory Android TVs**, with a polar bear and winter-nature theme. Built and tuned on a **TCL 40ES565** (Android 9, 1.4 GB RAM, no root), where the stock launcher used 170 MB of RAM and dropped over a third of its frames.
 
@@ -9,6 +18,8 @@ A fast, Apple TV-inspired home screen, screensaver and settings app for **low-me
 | Home screen memory | 159–177 MB | ~28–40 MB |
 | Janky frames while browsing | 34–39 %, worst frames 550 ms | 0.3 %, 8–10 ms per frame |
 | Cold start | – | ~0.6 s |
+
+<p align="center"><img src="docs/gallery.png" alt="Home, all apps, settings and source picker"></p>
 
 ## What you get
 
