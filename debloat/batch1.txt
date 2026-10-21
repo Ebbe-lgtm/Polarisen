@@ -1,0 +1,40 @@
+# Batch 1 - säker debloat: TCL-telemetri/extras, Google-extras, oanvända AOSP-appar.
+# Format: <action> <args>   # kommentar
+#   disable <pkg> | appops <pkg> <OP> <mode> | idle <pkg> | setting <global|secure|system> <key> <value>
+# Kör:  powershell -ExecutionPolicy Bypass -File scripts\debloat.ps1 -File debloat\batch1.txt -DryRun
+# Ångra: powershell -ExecutionPolicy Bypass -File scripts\restore.ps1
+
+# --- TCL
+disable com.tcl.bi                                    # TCL telemetri/användningsstatistik (BI)
+disable com.tcl.usercenter                            # TCL-konto / användarcenter
+disable com.tcl.esticker                              # TCL e-sticker (butiksdemo/energietikett)
+disable com.tcl.waterfall.overseas                    # TCL innehålls-/reklamflöde ("waterfall")
+disable com.tcl.tv.tclhome_passive                    # TCL Home bakgrundstjänst
+disable com.tcl.appmarket2                            # TCL appbutik
+disable com.tcl.tvweishi                              # TCL "TV-vakt" (städ-/säkerhetsverktyg)
+disable com.tcl.copydatatotv                          # TCL kopiera data till TV:n
+disable com.tcl.keyhelp                               # TCL hjälpguide för fjärrkontrollens knappar
+
+# --- Google
+disable com.google.android.tvrecommendations          # Google-rekommendationer på hemskärmen
+disable com.google.android.leanbacklauncher.recommendations  # rekommendationer för gamla Leanback-hemskärmen
+disable com.google.android.feedback                   # Google feedback-rapporter
+disable com.google.android.tv.bugreportsender         # skickar buggrapporter till Google
+disable com.google.android.play.games                 # Google Play Spel
+disable com.google.android.videos                     # Google Play Filmer & TV
+disable com.google.android.marvin.talkback            # TalkBack skärmläsare (tillgänglighet)
+
+# --- AOSP
+disable com.android.printspooler                      # utskriftstjänst
+disable com.android.wallpaper.livepicker              # väljare för levande bakgrundsbild
+disable com.android.gallery3d                         # Galleri-appen
+
+# --- Snabbare animationer
+setting global window_animation_scale 0.5             # fönsteranimationer på halva tiden
+setting global transition_animation_scale 0.5         # övergångsanimationer på halva tiden
+
+# --- Stoppa bakgrundskörning
+appops com.google.android.youtube.tvmusic RUN_IN_BACKGROUND ignore # YouTube Music
+
+# --- Undanta från dvala (Doze) så att Cast och mobilfjärrkontroll alltid svarar
+idle com.google.android.tv.remote.service             # Android TV Remote Service (mobilen som fjärrkontroll)

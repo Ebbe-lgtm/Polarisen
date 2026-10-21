@@ -1,0 +1,4 @@
+*.sh text eol=lf
+launcher/gradlew text eol=lf
+*.jpg binary
+*.ttf binary

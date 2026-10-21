@@ -1,0 +1,5 @@
+# Isbjörn som viloläge (skärmsläckare) i stället för Googles Backdrop.
+# Kör:   powershell -ExecutionPolicy Bypass -File scripts\debloat.ps1 -File debloat\isbjorn.txt
+# Ångra: powershell -ExecutionPolicy Bypass -File scripts\restore.ps1
+
+setting secure screensaver_components se.isbjorn.home/se.isbjorn.home.IsbjornDream   # Isbjörns viloläge

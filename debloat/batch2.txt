@@ -1,0 +1,13 @@
+# KÖR INTE förrän Isbjörn-launchern är installerad och verifierad som HOME
+# (annars står TV:n utan hemskärm). debloat.ps1 vägrar disabla den launcher som är HOME just nu.
+# Ångra: powershell -ExecutionPolicy Bypass -File scripts\restore.ps1
+
+disable com.google.android.katniss                    # Google Assistant / röstsök (mikrofonknappen slutar fungera)
+disable com.google.android.speech.pumpkin             # offline-taligenkänning för röstkommandon
+disable com.google.android.tvlauncher                 # Googles TV-hemskärm (ersätts av Isbjörn)
+disable com.google.android.leanbacklauncher           # gamla Leanback-hemskärmen
+disable com.google.android.leanbacklauncher.partnercustomizer  # partneranpassning för Leanback-hemskärmen
+disable com.google.android.leanbacklauncher.partnerwidget      # partnerwidget för Leanback-hemskärmen
+disable com.google.android.backdrop                   # Backdrop/Ambient skärmsläckare
+disable com.tcl.versionUpdateApp                      # TCL:s app för systemuppdateringar
+disable com.tcl.rc.ota                                # TCL firmware-uppdatering (OTA) för fjärrkontrollen

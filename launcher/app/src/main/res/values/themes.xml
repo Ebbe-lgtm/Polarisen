@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Isbjorn" parent="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+        <!-- black window background avoids a white flash before the first frame -->
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+</resources>

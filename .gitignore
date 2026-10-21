@@ -1,0 +1,12 @@
+launcher/.gradle/
+launcher/build/
+launcher/app/build/
+launcher/local.properties
+*.apk
+changes.log
+snapshots/
+screenshots/
+measurements/
+scripts/tv-ip.txt
+images/source/
+images/prepared/
